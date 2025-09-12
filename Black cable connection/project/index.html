@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabel Connection - Power Every Moment With Limitless Speed</title>
+    <meta name="description" content="Experience unlimited internet speed with Cabel Connection. Professional fiber-optic services for gaming, streaming, and remote work.">
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/partners.css">
+    <link rel="stylesheet" href="styles/faq.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Cabel Connection</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="tel:+18442192509" class="nav-cta">Call +1-844-219-2509</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Power Every Moment With Limitless Speed</h1>
+                <div class="hero-cta">
+                    <button class="cta-primary" id="checkServiceBtn">Check Service in My Area</button>
+                    <a href="tel:+18442192509" class="cta-secondary">Call +1-844-219-2509</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.querySelector('.life-panels').scrollIntoView({behavior: 'smooth'})">
+            <div class="scroll-arrow"></div>
+            <div class="scroll-text">Scroll Down</div>
+        </div>
+    </section>
+
+    <!-- Everyday Life Panels -->
+    <section class="life-panels">
+        <div class="panel" data-theme="work">
+            <div class="panel-content">
+                <div class="panel-text">
+                    <h2>Remote Work Perfection</h2>
+                    <p>Crystal clear video calls, instant file uploads, and seamless collaboration tools. Work from anywhere with confidence.</p>
+                </div>
+                <div class="panel-image">
+                    <img src="https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional working remotely with high-speed internet" loading="lazy">
+                </div>
+            </div>
+        </div>
+        
+        <div class="panel" data-theme="gaming">
+            <div class="panel-content">
+                <div class="panel-image">
+                    <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Gaming setup with ultra-low latency connection" loading="lazy">
+                </div>
+                <div class="panel-text">
+                    <h2>Gaming Without Lag</h2>
+                    <p>Ultra-low latency gaming with speeds up to 1Gbps. Dominate the competition with zero interruptions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="panel" data-theme="streaming">
+            <div class="panel-content">
+                <div class="panel-text">
+                    <h2>Family Streaming Nights</h2>
+                    <p>Multiple 4K streams, no buffering, endless entertainment. Everyone streams what they love, simultaneously.</p>
+                </div>
+                <div class="panel-image">
+                    <img src="https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Family enjoying streaming entertainment together" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Bundle Configurator -->
+    <section class="bundle-configurator">
+        <div class="container">
+            <h2>Build Your Perfect Bundle</h2>
+            <p>Drag and drop services to create your custom package</p>
+            <div class="configurator-interface">
+                <div class="service-cards">
+                    <div class="service-card" data-service="internet" data-price="49.99">
+                        <h3>High-Speed Internet</h3>
+                        <p>Up to 1 Gbps</p>
+                        <span class="price">$49.99/month</span>
+                    </div>
+                    <div class="service-card" data-service="tv" data-price="29.99">
+                        <h3>Premium TV</h3>
+                        <p>200+ channels</p>
+                        <span class="price">$29.99/month</span>
+                    </div>
+                    <div class="service-card" data-service="phone" data-price="19.99">
+                        <h3>Home Phone</h3>
+                        <p>Unlimited calling</p>
+                        <span class="price">$19.99/month</span>
+                    </div>
+                </div>
+                <div class="bundle-dropzone" id="bundleDropzone">
+                    <p>Drop services here to build your bundle</p>
+                    <div class="selected-services" id="selectedServices"></div>
+                    <div class="total-price">
+                        <span>Total: $<span id="totalPrice">0.00</span>/month</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Partner Brands -->
+    <section class="partners">
+        <div class="container">
+            <h2>Trusted Partners</h2>
+            <div class="partner-marquee">
+                <div class="marquee-track">
+                    <div class="partner-logo">Paramount+</div>
+                    <div class="partner-logo">SHOWTIME®</div>
+                    <div class="partner-logo">AT&T</div>
+                    <div class="partner-logo">Verizon</div>
+                    <div class="partner-logo">Spectrum</div>
+                    <div class="partner-logo">Comcast Xfinity</div>
+                    <div class="partner-logo">Frontier</div>
+                    <div class="partner-logo">HughesNet</div>
+                    <div class="partner-logo">CenturyLink</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2>See Cabel Connection in the Wild</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="installs">Installations</button>
+                <button class="filter-btn" data-filter="speed">Speed Tests</button>
+                <button class="filter-btn" data-filter="gaming">Gaming Setups</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" data-category="installs">
+                    <img src="https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional fiber installation" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="speed">
+                    <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Speed test showing gigabit speeds" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="gaming">
+                    <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gaming setup with ultra-fast internet" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="installs">
+                    <img src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Technician installing fiber equipment" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="speed">
+                    <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Network performance monitoring dashboard" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="gaming">
+                    <img src="https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional esports gaming room" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-carousel" id="reviewsCarousel">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Incredible speeds and rock-solid reliability. Gaming has never been better!"</p>
+                    <div class="reviewer">- Alex M.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Working from home is seamless now. Video calls are crystal clear."</p>
+                    <div class="reviewer">- Sarah K.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The whole family can stream 4K content without any buffering."</p>
+                    <div class="reviewer">- Mike R.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support">
+        <div class="container">
+            <div class="support-content">
+                <div class="support-image">
+                    <img src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional customer support technician" loading="lazy">
+                </div>
+                <div class="support-info">
+                    <h2>24/7 Expert Support</h2>
+                    <p>Our certified technicians are always ready to help you get the most out of your connection.</p>
+                    <div class="chat-bubble">
+                        <p>Need help? We're here for you!</p>
+                    </div>
+                    <a href="tel:+18442192509" class="support-cta">Call +1-844-219-2509</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="warp-tunnel"></div>
+        <div class="container">
+            <h2>Ready for Limitless Speed?</h2>
+            <p>Join thousands of satisfied customers experiencing the future of internet</p>
+            <button class="cta-mega" id="finalCta">Get Connected Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Cabel Connection</h3>
+                    <p>Powering the future of connectivity</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="refund.html">Refund Policy</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="tel:+18442192509">+1-844-219-2509</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cabel Connection. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <img id="lightboxImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/hero.js"></script>
+    <script src="scripts/coverage.js"></script>
+    <script src="scripts/configurator.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>

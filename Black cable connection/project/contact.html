@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cabel Connection</title>
+    <meta name="description" content="Get in touch with Cabel Connection. Call us at +1-844-219-2509 for immediate assistance with your internet service needs.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/faq.css">
+    <style>
+        .faq-question, .faq-answer {
+            color: var(--color-black) !important;
+            text-decoration: none !important;
+        }
+        .faq-question:hover, .faq-item.active .faq-question {
+            color: var(--color-white) !important;
+        }
+        .faq h2 {
+            color: var(--color-black) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Cabel Connection</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="tel:+18442192509" class="nav-cta">Call +1-844-219-2509</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Cabel Connection</h1>
+            <p>We're here to help you get connected</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-primary">
+                    <div class="contact-highlight">
+                        <h2>Need Immediate Assistance?</h2>
+                        <p>Our expert support team is available 24/7 to help with all your internet service needs.</p>
+                        <a href="tel:+18442192509" class="phone-cta">
+                            <span class="phone-icon">📞</span>
+                            <span class="phone-number">+1-844-219-2509</span>
+                        </a>
+                        <p class="availability">Available 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="How can we help you today?"></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Hours -->
+    <section class="support-info">
+        <div class="container">
+            <h2>Customer Support</h2>
+            <div class="support-grid">
+                <div class="support-item">
+                    <h4>New Service Inquiries</h4>
+                    <p>Ready to get started? Our sales team can help you find the perfect plan for your needs.</p>
+                    <a href="tel:+18442192509" class="support-link">Call +1-844-219-2509</a>
+                </div>
+                <div class="support-item">
+                    <h4>Technical Support</h4>
+                    <p>Experiencing issues with your service? Our technical experts are here to help.</p>
+                    <a href="tel:+18442192509" class="support-link">Call +1-844-219-2509</a>
+                </div>
+                <div class="support-item">
+                    <h4>Billing Questions</h4>
+                    <p>Have questions about your bill or account? We're here to provide answers.</p>
+                    <a href="tel:+18442192509" class="support-link">Call +1-844-219-2509</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">What areas do you service?</div>
+                    <div class="faq-answer">We're rapidly expanding our fiber network across the nation. Call us at +1-844-219-2509 to check availability in your area.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How fast is the installation process?</div>
+                    <div class="faq-answer">Most installations are completed within 2-4 hours by our certified technicians. We'll schedule a convenient time that works for you.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer 24/7 support?</div>
+                    <div class="faq-answer">Yes! Our expert support team is available 24 hours a day, 7 days a week at +1-844-219-2509.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What speeds do you offer?</div>
+                    <div class="faq-answer">We offer various speed tiers up to 1 Gbps, perfect for gaming, streaming, and remote work. Contact us to find the right plan for you.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Call Button (Mobile) -->
+    <div class="floating-call-btn">
+        <a href="tel:+18442192509">
+            <span class="call-icon">📞</span>
+            Call Now
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Cabel Connection</h3>
+                    <p>Powering the future of connectivity</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="refund.html">Refund Policy</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="tel:+18442192509">+1-844-219-2509</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cabel Connection. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/faq.js"></script>
+</body>
+</html>
