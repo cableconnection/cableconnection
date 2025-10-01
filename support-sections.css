@@ -1,0 +1,518 @@
+/* Live Agents Section */
+.live-agents {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--color-gray-lighter) 0%, var(--color-white) 100%);
+}
+
+.live-agents-content {
+    text-align: center;
+}
+
+.agents-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.agents-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: var(--spacing-sm);
+}
+
+.agents-header p {
+    font-size: 1.125rem;
+    color: var(--color-gray-medium);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.agents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.agent-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-gray-light);
+}
+
+.agent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.agent-avatar {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-sm);
+}
+
+.agent-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.status-indicator {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.status-indicator.online {
+    background: #00FF88;
+    animation: pulse 2s infinite;
+}
+
+.agent-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.agent-info p {
+    color: var(--color-gray-medium);
+    margin-bottom: var(--spacing-sm);
+}
+
+.agent-chat-btn {
+    background: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.agent-chat-btn:hover {
+    background: var(--color-gray-dark);
+    transform: translateY(-2px);
+}
+
+.emergency-contact {
+    margin-top: var(--spacing-md);
+}
+
+.emergency-phone {
+    color: var(--color-black);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+.emergency-phone:hover {
+    text-decoration: underline;
+}
+
+/* Internet Issues Section */
+.internet-issues {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-black);
+    color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.issues-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.issues-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-icon {
+    position: relative;
+    animation: shake 0.5s infinite alternate;
+}
+
+.wifi-icon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+}
+
+.wifi-bar {
+    background: var(--color-gray-medium);
+    border-radius: 4px 4px 0 0;
+    animation: fadeSignal 1.5s infinite;
+}
+
+.wifi-bar:nth-child(1) {
+    width: 15px;
+    height: 30px;
+}
+
+.wifi-bar:nth-child(2) {
+    width: 15px;
+    height: 50px;
+    animation-delay: 0.3s;
+}
+
+.wifi-bar:nth-child(3) {
+    width: 15px;
+    height: 70px;
+    animation-delay: 0.6s;
+}
+
+.error-x {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #FF4444;
+    font-weight: bold;
+    animation: pulse 1s infinite;
+}
+
+.issues-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+}
+
+.issues-text h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FF4444;
+    margin-bottom: var(--spacing-md);
+}
+
+.issues-text p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-gray-light);
+}
+
+.quick-fixes {
+    margin-bottom: var(--spacing-lg);
+}
+
+.fix-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.125rem;
+}
+
+.fix-icon {
+    font-size: 1.5rem;
+    margin-right: var(--spacing-sm);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.issues-cta {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.btn-troubleshoot, .btn-call-now {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-troubleshoot {
+    background: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid var(--color-white);
+}
+
+.btn-troubleshoot:hover {
+    background: transparent;
+    color: var(--color-white);
+}
+
+.btn-call-now {
+    background: #FF4444;
+    color: var(--color-white);
+    border: 2px solid #FF4444;
+}
+
+.btn-call-now:hover {
+    background: transparent;
+    border-color: var(--color-white);
+}
+
+/* Technician Booking Section */
+.technician-booking {
+    padding: var(--spacing-xl) 0;
+    background: var(--color-gray-lighter);
+}
+
+.booking-header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.booking-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: var(--spacing-sm);
+}
+
+.booking-header p {
+    font-size: 1.125rem;
+    color: var(--color-gray-medium);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.booking-form {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.booking-form h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 2px solid var(--color-gray-light);
+    border-radius: var(--border-radius-md);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-black);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.btn-book-tech {
+    width: 100%;
+    background: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-weight: 600;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-book-tech:hover {
+    background: var(--color-gray-dark);
+    transform: translateY(-2px);
+}
+
+.booking-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.tech-features {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-item:last-child {
+    margin-bottom: 0;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    margin-right: var(--spacing-sm);
+    flex-shrink: 0;
+}
+
+.feature-text h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-text p {
+    color: var(--color-gray-medium);
+    line-height: 1.5;
+}
+
+.emergency-booking {
+    background: #FF4444;
+    color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+}
+
+.emergency-booking h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.emergency-booking p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.btn-emergency {
+    background: var(--color-white);
+    color: #FF4444;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-emergency:hover {
+    background: var(--color-gray-lighter);
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-5px); }
+}
+
+@keyframes fadeSignal {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .agents-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .issues-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+    
+    .issues-visual {
+        order: 1;
+    }
+    
+    .issues-text {
+        order: 2;
+    }
+    
+    .issues-cta {
+        justify-content: center;
+    }
+    
+    .booking-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .wifi-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .wifi-bar:nth-child(1) { height: 20px; }
+    .wifi-bar:nth-child(2) { height: 35px; }
+    .wifi-bar:nth-child(3) { height: 50px; }
+    
+    .error-x {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .agents-header h2,
+    .issues-text h2,
+    .booking-header h2 {
+        font-size: 2rem;
+    }
+    
+    .issues-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .issues-cta {
+        flex-direction: column;
+    }
+    
+    .btn-troubleshoot,
+    .btn-call-now {
+        text-align: center;
+    }
+}

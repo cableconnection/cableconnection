@@ -1,0 +1,110 @@
+.faq {
+    background-color: var(--color-white);
+    padding: 4rem 2rem;
+}
+
+.faq h2 {
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid var(--color-black);
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    padding: 1.5rem;
+    background-color: var(--color-white);
+    color: var(--color-black) !important;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-black);
+}
+
+.faq-item.active .faq-question::after {
+    content: '−';
+}
+
+.faq-question:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.faq-question:hover::after {
+    color: var(--color-white);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--color-white);
+    color: var(--color-black) !important;
+    transition: all 0.3s ease;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.faq-item.active .faq-answer {
+    padding: 1.5rem;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.faq-item.active .faq-question {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-black);
+}
+
+.faq-item.active .faq-question::after {
+    color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+    .faq {
+        padding: 3rem 1rem;
+    }
+    
+    .faq h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .faq-question {
+        padding: 1.25rem;
+    }
+    
+    .faq-item.active .faq-answer {
+        padding: 1.25rem;
+    }
+}
